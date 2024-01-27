@@ -1,45 +1,63 @@
 <!doctype html>
 <html>
-  <head>
-    <title>My Projects</title>
-    <link href="output.css" rel="stylesheet" />
-  </head>
 
-  <body
-    class="min-h-screen bg-gradient-to-t from-purple-900 via-purple-600 to-purple-400"
-  >
-    <nav class="h-20">
-      <div class="px-2 sm:px-6 lg:px-8 py-2">
-        <div class="relative flex h-16 justify-between">
-          <div class="flex flex-shrink-0">
-            <img class="h-16 w-auto" src="logoG.png" alt="Your Company" />
-          </div>
-          <div class="flex items-center h-19">
-            <div class="ml-6 block">
-              <div class="flex space-x-4">
-                <a
-                  href="portfolio.html"
-                  class="text-purple-900 hover:bg-purple-500 hover:text-white rounded-md px-3 py-5 text-2xl font-bold"
-                  >Home</a
-                >
-                <a
-                  href="projects.html"
-                  class="text-purple-900 hover:bg-purple-500 hover:text-white rounded-md px-3 py-5 text-2xl font-bold"
-                  >Projects</a
-                >
-                <a
-                  href="internships.html"
-                  class="text-purple-900 hover:bg-purple-500 hover:text-white rounded-md px-3 py-5 text-2xl font-bold"
-                  >Internships</a
-                >
-              </div>
+<head>
+  <title>My Projects</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+
+<body class="min-h-screen bg-gradient-to-t from-purple-900 via-purple-600 to-purple-400">
+  <nav class="h-20">
+    <div class="px-2 sm:px-6 lg:px-8 py-2">
+      <div class="relative flex h-16 justify-between">
+        <div class="flex flex-shrink-0">
+          <img class="h-16 w-auto" src="logoG.png" alt="Your Company" />
+        </div>
+        <div class="flex items-center h-19">
+          <div class="ml-6 block">
+            <div class="flex space-x-4">
+              <a href="portfolio.html"
+                class="text-purple-900 hover:bg-purple-500 hover:text-white rounded-md px-3 py-5 text-2xl font-bold">Home</a>
+              <a href="projects.html"
+                class="text-purple-900 hover:bg-purple-500 hover:text-white rounded-md px-3 py-5 text-2xl font-bold">Projects</a>
+              <a href="internships.html"
+                class="text-purple-900 hover:bg-purple-500 hover:text-white rounded-md px-3 py-5 text-2xl font-bold">Internships</a>
             </div>
           </div>
-          <div class="flex flex-shrink-0">
-            <img class="h-16 w-auto" src="logoD.png" alt="Your Company" />
-          </div>
+        </div>
+        <div class="flex flex-shrink-0">
+          <img class="h-16 w-auto" src="logoD.png" alt="Your Company" />
         </div>
       </div>
-    </nav>
-  </body>
+    </div>
+  </nav>
+
+  <div
+    class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-lg p-5 mx-auto mt-24 h-sc w-2/3">
+    <img class="mx-auto w-4/5 rounded-lg" src="pdp.jpg" alt="Your Picture" />
+    <p class="text-white text-justify text-lg leading-relaxed mt-4 lg:col-span-2 lg:row-span-4">
+
+    </p>
+    <a href="https://www.linkedin.com/in/etiennegaillard314159265359/" target="_blank"
+      class="text-white text-center text-lg leading-relaxed mt-4">
+      <span class="underline">
+        Link to my Linkdedin profile
+      </span>
+    </a>
+    <a href="CV.pdf" download class="text-white text-center text-lg leading-relaxed mt-4">
+      <span>
+        Here, you can download my CV
+      </span>
+      <div class="lg:col-span-2"></div>
+      <a class="text-center">
+        <button class="text-white text-lg leading-relaxed mt-4" onclick="copyToClipboard('etienne.gaillard@efrei.net')">
+          <span>
+            Click to copy my mail adress
+          </span>
+        </button>
+      </a>
+  </div>
+
+</body>
+
 </html>
