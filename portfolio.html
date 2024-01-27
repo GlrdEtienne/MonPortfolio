@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
     <title>My Portfolio</title>
-    <link href="output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet" />
 </head>
 
 <body class="min-h-screen bg-gradient-to-t from-purple-900 via-purple-600 to-purple-400">
@@ -11,7 +11,7 @@
         <div class="px-2 sm:px-6 lg:px-8 py-2">
             <div class="relative flex h-16 justify-between">
                 <div class="flex flex-shrink-0">
-                    <img class="h-16 w-auto" src="logoG.png" alt="Your Company">
+                    <img class="h-16 w-auto" src="logoG.png" alt="Your Company" />
                 </div>
                 <div class="flex items-center h-19">
                     <div class="ml-6 block">
@@ -26,31 +26,77 @@
                     </div>
                 </div>
                 <div class="flex flex-shrink-0">
-                    <img class="h-16 w-auto" src="logoD.png" alt="Your Company">
+                    <img class="h-16 w-auto" src="logoD.png" alt="Your Company" />
                 </div>
             </div>
         </div>
     </nav>
 
     <div
-        class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-lg p-5 mx-auto mt-24 h-96 w-2/3">
-        <img class="w-4/5 rounded-lg" src="pdp.jpg" alt="Your Picture">
-        <a href="CV.pdf" download class="text-white text-lg leading-relaxed mt-4 text-center block">Here you can
-            download my CV</a>
-        <div class="flex flex-col justify-between lg:col-span-2"">
-            <p class=" text-white text-lg leading-relaxed mt-4">
-            Hello, my name is <span class="font-bold">Etienne</span>, I am a, soon to be, <span
-                class="font-bold">Computer
-                Science</span> graduate at <span class="font-bold">University of EFREI PARIS</span>. I am currently
-            working as a <span class="font-bold">MotionBuilder's Python Developper</span> at <span
-                class="font-bold">Mocaplab
-            </span> and I am looking for new opportunities to expand my knowledge and skills.
-            </p>
-
-        </div>
-
+        class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-lg p-5 mx-auto mt-24 h-sc w-2/3">
+        <img class="mx-auto w-4/5 rounded-lg" src="pdp.jpg" alt="Your Picture" />
+        <p class="text-white text-justify text-lg leading-relaxed mt-4 lg:col-span-2 lg:row-span-4">
+            Hello, my name is <span class="font-bold">Etienne</span> <br />I am a,
+            soon to be, <span class="font-bold">Computer Science</span> engineer
+            from the <span class="font-bold">University of EFREI PARIS</span> specialised in Virtual Reality and Imagery.
+            <br />Currently working as a
+            <span class="font-bold">MotionBuilder's Python Developper</span> at
+            <span class="font-bold">Mocaplab </span> and if you are looking at this
+            it's for a reason. <br />In fact I am craving for new opportunities to
+            expand my knowledge and skills. I've always been passionate about
+            <span class="font-bold">video games</span> and
+            <span class="font-bold">cinema</span> and I would love to have a job
+            related to one if not both of this passions. <br />Since I have
+            discovered it, I am very interested in the world of
+            <span class="font-bold">Motion Capture</span>.
+            <br />
+            One of my objectives in my career is to be able to work at Ubisoft
+            Montreal in the <span class="font-bold">"Studio Alice"</span>, since
+            they have realised some of my favorites video games.
+            <br />
+            I want to be able to create, in the futur user's eyes, the same wonder I
+            had when I was a child.
+            <br />
+            <br />
+            Thank you for taking the time to read this and I hope you will consider
+            me for a job or an internship.
+        </p>
+        <a href="https://www.linkedin.com/in/etiennegaillard314159265359/" target="_blank"
+            class="text-white text-center text-lg leading-relaxed mt-4"><span class="underline">Link to my Linkdedin profile</span>
+        </a>
+        <a href="CV.pdf" download class="text-white text-center text-lg leading-relaxed mt-4"><span>Here, you can
+                download my CV</span>
+            <div class="lg:col-span-2"></div>
+            <a class="text-center"><button class="text-white text-lg leading-relaxed mt-4"
+                    onclick="copyToClipboard('etienne.gaillard@efrei.net')"><span>Click to copy my
+                        mail adress</span></button></a>
     </div>
 
+
+
+
+
+
+
+    <script>
+        function copyToClipboard(text) {
+            var textarea = document.createElement("textarea");
+            textarea.textContent = text;
+            textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                if (document.execCommand("copy")) {  // Security exception may be thrown by some browsers.
+                    alert('Address has been copied!');
+                }
+            } catch (ex) {
+                console.warn("Copy to clipboard failed.", ex);
+                return false;
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        }
+    </script>
 </body>
 
 </html>
